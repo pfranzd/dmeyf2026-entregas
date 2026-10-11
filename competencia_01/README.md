@@ -20,9 +20,9 @@ sha256 del CSV generado con el de arriba (`RESULTADO: OK, coincide`):
 
 | Modo | Qué rehace | Tiempo aprox. |
 |---|---|---|
-| `predecir` (default) | Datos y features desde el crudo, y **predice** con los 24 modelos ya entrenados | ~15 min |
+| `predecir` (default) | Datos y features desde el crudo, y **predice** con los 24 modelos ya entrenados | ~16 min |
 | `entrenar` | Lo anterior, pero **reentrena** los 24 modelos con los hiperparámetros de `competencia_1/definitiva/params.json` | ~80 min |
-| `completo` | **Todo, incluida la optimización de hiperparámetros** (Optuna, 60 trials) que dio origen a esos hiperparámetros | ~2,5 h |
+| `completo` | **Todo, incluida la optimización de hiperparámetros** (Optuna, 60 trials) que dio origen a esos hiperparámetros | ~1,5 h |
 
 **Linux o VM de GCP:**
 
@@ -41,6 +41,10 @@ py -3.11 -m venv .venv
 $env:ENTREGA_MODO = "predecir"      # o "entrenar" / "completo"
 .venv\Scripts\python entrega.py
 ```
+
+**Verificación:** los tres modos se corrieron desde un clon limpio de este repositorio, con el entorno
+instalado desde `requirements-lock.txt` y el dataset descargado de la URL pública, y los tres generan un CSV
+con el sha256 indicado arriba (el 2026-10-10: `predecir` ~16 min, `completo` ~92 min).
 
 También se puede abrir `entrega.ipynb` (es el mismo código que `entrega.py`) y ejecutarlo
 completo; el modo se elige en la segunda celda.
@@ -92,5 +96,5 @@ optimizacion/                  evidencia de la optimización (estudio de Optuna 
 
 ## Trazabilidad
 
-Generada el 2026-10-10 19:05 desde el repositorio de trabajo, commit `8aa592c59e`, run
+Generada el 2026-10-10 21:07 desde el repositorio de trabajo, commit `38666d6a17`, run
 `20261009-232755_e032_expansiva_auc_topk`. El CSV de ese run coincide byte a byte con el que reproduce esta carpeta.

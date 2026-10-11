@@ -1,8 +1,8 @@
 # %% [markdown]
-# # Entrega Competencia 01 — e032_expansiva_auc_topk (10000 envíos)
+# # Entrega Competencia 01 — ens04_e032_e033_e034 (10500 envíos)
 #
 # Este archivo (y su copia `entrega.ipynb`, que es el mismo código) reproduce **exactamente** el
-# CSV entregado: `20261009-232755_e032_expansiva_auc_topk_promedio_e10000.csv` (sha256 `d194531be2064c1b4eaba42523a591aef7a987ffe8b5d9162c5bd74ed09d0364`).
+# CSV entregado: `20261011-091551_ens04_e032_e033_e034_e10500.csv` (sha256 `385da7093ab1e93b894016de3cb537460dc48ee0cc2befdce943ddbae850d5df`).
 #
 # Parte del dataset de la competencia (`competencia_01_crudo.csv`, se descarga solo si falta) y
 # comprueba al final que el CSV generado tenga el mismo sha256. Elegí el modo en la celda
@@ -10,9 +10,9 @@
 #
 # | MODO | Qué hace | Tiempo aprox. |
 # |---|---|---|
-# | `predecir` (default) | datos → features → predice con los 24 modelos ya entrenados (`competencia_1/definitiva/modelos`) | ~16 min |
-# | `entrenar` | datos → features → reentrena los 24 modelos con los hiperparámetros de `params.json` | ~80 min |
-# | `completo` | rehace TODO: la optimización de hiperparámetros con Optuna (60 trials), selección de los mejores y modelos finales | ~1,5 h |
+# | `predecir` (default) | datos → features → predice con los 72 modelos ya entrenados (`competencia_1/definitiva/componentes/*/modelos`) | ~1 h |
+# | `entrenar` | datos → features → reentrena los 72 modelos con los hiperparámetros guardados | ~4 h |
+# | `completo` | rehace TODO: la optimización de hiperparámetros con Optuna (180 trials), selección de los mejores y modelos finales | ~5 h |
 
 # %%
 import os

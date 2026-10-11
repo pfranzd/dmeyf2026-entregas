@@ -7,6 +7,6 @@ la competencia no se suben (el script los descarga).
 
 | Competencia | Carpeta | Entrega | Envíos | sha256 | Público |
 |---|---|---|---|---|---|
-| Competencia 01 | [`competencia_01/`](competencia_01/) | e032_expansiva_auc_topk | 10000 | `d194531be206…` | 109.26 M |
+| Competencia 01 | [`competencia_01/`](competencia_01/) | ens04_e032_e033_e034 | 10500 | `385da7093ab1…` | 110.17 M |
 
 Instrucciones de cada entrega: el `README.md` dentro de su carpeta.

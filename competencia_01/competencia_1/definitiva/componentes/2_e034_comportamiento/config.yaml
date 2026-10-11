@@ -26,6 +26,7 @@ target:
   positivos:
   - BAJA+1
   - BAJA+2
+  peso_baja1: 1.0
 datos:
   csv_procesado: datasets/processed/competencia_01.csv
   csv_crudo: datasets/raw/competencia_01_crudo.csv
@@ -80,6 +81,8 @@ fe:
   canaritos:
     activo: false
     n: 0
+  montos: crudo
+  comportamiento: true
 dataset:
   undersampling: 0.25
   excluir_bloques: []
@@ -146,13 +149,13 @@ ablacion:
       excluir_bloques: []
       excluir_features: []
 final:
-  params_desde: archivo:competencia_1/definitiva/params.json
+  params_desde: archivo:competencia_1/definitiva/componentes/2_e034_comportamiento/params.json
   n_semillas: 2
   semillas: null
   promedio: true
   reescalar_min_data: false
+  modelos_desde: competencia_1/definitiva/componentes/2_e034_comportamiento/modelos
   params_ignorar_fe_hash: true
-  modelos_desde: competencia_1/definitiva/modelos
 salida:
   envios:
   - 10000

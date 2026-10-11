@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Reproduce la entrega (Linux / VM de GCP). Uso:
-#   bash reproducir.sh              # predice con los modelos ya entrenados (~16 min)
-#   bash reproducir.sh entrenar     # reentrena los modelos (~80 min)
-#   bash reproducir.sh completo     # rehace también la optimización de Optuna (~1,5 h)
+#   bash reproducir.sh              # predice con los modelos ya entrenados (~1 h)
+#   bash reproducir.sh entrenar     # reentrena los modelos (~4 h)
+#   bash reproducir.sh completo     # rehace también la optimización de Optuna (~5 h)
 # Crea un entorno virtual .venv con las versiones exactas de requirements-lock.txt (Python 3.11),
 # descarga el dataset si falta y termina con código 0 solo si el sha256 coincide.
 set -euo pipefail

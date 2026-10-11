@@ -1,8 +1,8 @@
 # %% [markdown]
-# # Entrega Competencia 01 — e032_expansiva_auc_topk (10500 envíos)
+# # Entrega Competencia 01 — e032_expansiva_auc_topk (10000 envíos)
 #
 # Este archivo (y su copia `entrega.ipynb`, que es el mismo código) reproduce **exactamente** el
-# CSV entregado: `20261009-232755_e032_expansiva_auc_topk_promedio_e10500.csv` (sha256 `5d2713bd87934be94c6c54ca9ec59ba013104090faeb5fe982228516fc9180d1`).
+# CSV entregado: `20261009-232755_e032_expansiva_auc_topk_promedio_e10000.csv` (sha256 `d194531be2064c1b4eaba42523a591aef7a987ffe8b5d9162c5bd74ed09d0364`).
 #
 # Parte del dataset de la competencia (`competencia_01_crudo.csv`, se descarga solo si falta) y
 # comprueba al final que el CSV generado tenga el mismo sha256. Elegí el modo en la celda

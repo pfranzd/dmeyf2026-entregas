@@ -1,13 +1,13 @@
-# Competencia 01 — entrega final: e032_expansiva_auc_topk con 10500 envíos
+# Competencia 01 — entrega final: e032_expansiva_auc_topk con 10000 envíos
 
 Esta carpeta contiene todo lo necesario para replicar **exactamente** el archivo que se subió
 como entrega final de la competencia:
 
 | | |
 |---|---|
-| Archivo entregado | `20261009-232755_e032_expansiva_auc_topk_promedio_e10500.csv` (solo `numero_de_cliente`, sin encabezado, 10500 filas) |
-| sha256 | `5d2713bd87934be94c6c54ca9ec59ba013104090faeb5fe982228516fc9180d1` |
-| Puntaje público | 107.7175 M |
+| Archivo entregado | `20261009-232755_e032_expansiva_auc_topk_promedio_e10000.csv` (solo `numero_de_cliente`, sin encabezado, 10000 filas) |
+| sha256 | `d194531be2064c1b4eaba42523a591aef7a987ffe8b5d9162c5bd74ed09d0364` |
+| Puntaje público | 109.2575 M |
 | Período objetivo | 202108 |
 
 El dataset de la competencia **no está en el repositorio**: el script lo descarga solo desde la
@@ -96,5 +96,5 @@ optimizacion/                  evidencia de la optimización (estudio de Optuna 
 
 ## Trazabilidad
 
-Generada el 2026-10-10 21:07 desde el repositorio de trabajo, commit `38666d6a17`, run
+Generada el 2026-10-10 21:35 desde el repositorio de trabajo, commit `ff02c74ad7`, run
 `20261009-232755_e032_expansiva_auc_topk`. El CSV de ese run coincide byte a byte con el que reproduce esta carpeta.
